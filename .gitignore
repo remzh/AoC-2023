@@ -1,0 +1,5 @@
+# don't need node_modules
+node_modules
+
+# don't leak session cookies
+.env

@@ -1,0 +1,22 @@
+v2.0 - 12.1.2022
+ - New: Added a "-q" flag to run a specific day while supressing all console.log statements withins aid day
+
+v2.1 - 12.5.2022
+ - Enhancement: base.js no longer trims start/end whitespace due to some inputs (i.e., 2022 day 5) depending on it. It now only removes an extraneous, empty start/end newline if one exists.
+
+v2.2 - 12.8.2022
+ - New: Added a "-t" flag to only run code against test inputs (no real inputs)
+ - New: Added a "-?" / "--help" flag to display help
+ - Enhancement: Replaced "setting the third argument to 1" with a "-b" flag to enable benchmarking
+ - Enhancement: Added versioning to base.js (and retroactively wrote a changelog back to 2.0, representing the start of AoC 2022)
+
+v2.3 - 12.9.2022
+ - New: (More) intelligent sample input searching - sample inputs will now have higher accuracy as base.js will attempt to take the correct code block (as indicated by the keyword "for example") rather than the first code block
+ - New: Added a user-agent string (see: https://redd.it/z9dhtd)
+ - Enhancement: Test input no longer gets overwritten when attempting to fetch expected part 2 value
+ - Enhancement: If the test input file for a particular day is blank, base.js will attempt to populate it
+ - Bugfix: "-t" flag no longer breaks if either star returns undefined
+ - Maintenance: Bumped package name from "AoC-2021" to "AoC-2022"
+
+v2.3.1 - 12.12.2022
+ - Bugfix: trim() throws an exception if given something other than a string (underlying bug in fetchTestInput, not yet fixed)
