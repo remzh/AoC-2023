@@ -1,11 +1,7 @@
-// Day #
+// 2023: Day 1
+// 11/30/2023
 
 const rl = require('./rl-tools'); 
-// Important, commonly used functions
-const range = rl.array.range; 
-Array.prototype.sum = function() {
-  return rl.array.sum(this);
-}; 
 
 // First part
 exports.silverStar = function(inpArr, inpStr) {
@@ -47,7 +43,7 @@ exports.goldStar = function(inpArr, inpStr) {
     n = parseInt([f, l].join(''));
 
     // this code does not work as it fails to catch the fun and exciting edge case
-    
+
     // v = v.match(/[0-9]|one|two|three|four|five|six|seven|eight|nine/g);
     // console.log(v);
     // let mp = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
