@@ -1,6 +1,6 @@
 {
-  "name": "aoc-2022",
-  "version": "0.1.1",
+  "name": "aoc-2023",
+  "version": "2.3.2",
   "description": "",
   "main": "base.js",
   "dependencies": {
@@ -8,11 +8,11 @@
     "colors": "^1.4.0",
     "cytoscape": "^3.23.0",
     "dotenv": "^10.0.0",
-    "node-fetch": "^2.6.6"
+    "node-fetch": "^2.6.7"
   },
   "scripts": {
     "test": "node ./test-tools.mjs"
   },
-  "author": "Ryan Zhang",
+  "author": "Rem Zhang",
   "license": "MIT"
 }

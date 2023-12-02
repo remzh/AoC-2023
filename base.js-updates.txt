@@ -20,3 +20,6 @@ v2.3 - 12.9.2022
 
 v2.3.1 - 12.12.2022
  - Bugfix: trim() throws an exception if given something other than a string (underlying bug in fetchTestInput, not yet fixed)
+
+v2.3.2 - 12.1.2023
+ - Bugfix: Whitespace/different newline characters can break test case testing

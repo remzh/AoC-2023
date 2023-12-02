@@ -1,6 +1,6 @@
 // AoC Base
-// (C) 2022 Ryan Zhang
-const VERSION = '2.3.1'
+// (C) 2023 Rem Zhang
+const VERSION = '2.3.2'
 
 require('dotenv').config(); 
 
@@ -251,6 +251,8 @@ async function runCode(day, input) {
     if(testInput.answers[1] === false) {
       testInput = await getTestInput(day, 1); 
     }
+    // Clean any weird whitespace characters
+    testInput.answers = testInput.answers.map(r => r.trim());
     let testOutput = script.goldStar(testInput.input.split('\n'), testInput.input);
     
     log(`${'Output:'.cyan} ${(typeof gold === 'string' || typeof gold === 'number') ? gold.toString().magenta : 'null'}`); 
