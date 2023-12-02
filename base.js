@@ -36,7 +36,7 @@ if (flags.silenceLog) {
   console.log = () => {};
 }
 if (flags.testInputOnly) {
-  console.log(`[WARN] -t flag passed, only running test inputs`.yellow);
+  log(`[WARN] -t flag passed, only running test inputs`.yellow);
 }
 
 function printBenchmark(str, i) {
@@ -47,7 +47,7 @@ function printBenchmark(str, i) {
 function trim(string) {
   // trim only removes one leading and/or trailing newline, as standard .trim() breaks certain inputs (i.e., AoC 2022 day 5)
   if (typeof string !== 'string') {
-    console.log(`[WARN] trim() was given a non-string input:`.yellow, string);
+    log(`[WARN] trim() was given a non-string input:`.yellow, string);
     return '';
   }
   if(string.slice(0, 1) === '\n') {
