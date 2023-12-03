@@ -1,4 +1,5 @@
-// Day #
+// 2023: Day XX
+// 12/XX/2023
 
 const rl = require('./rl-tools'); 
 // Important, commonly used functions
@@ -12,19 +13,18 @@ exports.silverStar = function(inpArr, inpStr) {
   let inp = inpArr;
   // let inp = inpArr.map(r => parseInt(r)); // [1,2,3]
   // let inp = inpArr.join('\n').split('\n\n')
+  // let inp = inpArr.join('\n').split('\n\n').map(r=>r.split('\n')); // [['a','b'],['c','d'],...]
   // let inp = inpArr.join('\n').split('\n\n').map(r=>r.split('\n').map(r=>parseInt(r))); // [[1,2,3],[4,5,6],...]
   let c = 0;
 
   // let m = new Map();
   // let s = new Set();
-  // let o = {};
-  // let a = [];
   
   for (let i = 0; i < inp.length; i++) {
     let v = inp[i];
     // v = v.map(r => parseInt(r));
 
-      
+    
   }
 
   return c;
